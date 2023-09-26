@@ -1,0 +1,7 @@
+<h1 [class.newClass]="isShow" [style.fontSize.px]="isShow ? '30': '10'">{{isShow ? 'T2' : title}}</h1>
+<ul>
+  <li *ngFor="let x of list; let i = index; let odd = odd; let even = even; let last = last" 
+  [style.color]="last ? 'red' : ''"
+  
+  >{{x}} - {{i}} - {{odd}} - {{even}} - {{last}}</li>
+</ul>
